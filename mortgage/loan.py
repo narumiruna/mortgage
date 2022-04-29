@@ -203,7 +203,7 @@ class Loan(object):
     @property
     def summarize(self):
         print('Original Balance:         {}{:>11,}'.format(self._currency,self.principal))
-        print('Interest Rate:             {:>11} %'.format(self.interest))
+        print('Interest Rate:             {:>11} %'.format(self.interest * 100))
         print('APY:                       {:>11} %'.format(self.apy))
         print('APR:                       {:>11} %'.format(self.apr))
         print('Term:                      {:>11} {}'.format(self.term, self.term_unit))
